@@ -108,6 +108,20 @@ header nav {
     background-color:gray;
     }
 
+  #toggleaside {
+    width: 5%;
+    min-height:960px;
+    float: left;
+    background-color:gray;
+    opacity:.7;
+  }
+
+  #friendlycircle {
+    
+  }
+
+
+
  div.panel, div.slider_head
 {
    margin:0px;
@@ -122,5 +136,110 @@ div.panel
 }
 #panel_1 {background:pink;}
 #panel_2 {background:yellow;}
+
+
+
+   /* Expand retract sidebar*/
+   .open-close {
+    background-color:red;
+    color:white;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  border: 6px solid;
+  margin: 0 auto;
+  position: relative;  
+  transition: 0.5s ;  
+
+  &:before {
+    content: "x";
+    display: block;
+    width: 6%;
+    height: 80%;
+
+    position: absolute;
+    top: 10%;
+    left: 47%;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 6%;
+   
+    position: absolute;
+    bottom: 47%;
+    left: 10%;
+  }
+  
+}
+
+.open {
+  border: 6px solid red;
+
+  transform: rotate(225deg);
+  &:before, &:after 
+  }background: red;
+}
+
+/*---------------------Box----------------------------------*/
+
+
+.box {
+  width: 20%;
+  height: 0px;
+  background: red;
+  margin: 0 auto;
+  margin-top: 2%;
+  transition: height 0.5s 0.5s, width 0.5s 1s, color 0.5s 1s, font-size 0.5s 1s;
+  overflow: hidden;
+  text-align: center;
+  line-height: 150px;
+  font-size: 3em;
+  font-family: Impact, sans-serif;
+  color: transparent;
+  white-space: nowrap;
+}
+.no + .box {
+  transition: width 0.5s, color 0.5s, font-size 0.5s, height 0.5s 0.5s;
+}
+.open + .box {
+  height: 200px;
+  width: 60%;
+  color: $color;
+  font-size: 7em;
+}
+/*----------------Text Blocks---------------------------------*/
+
+.text, .text2 {
+  width: 20%;
+  line-height: 1.7em;
+  font-size: 0.8em;
+  color: $contrast;
+  position: absolute;
+  top: 420px;
+  transition: 0.5s 1.5s;
+}
+.text {
+  left: -20%;
+}
+
+.text2 {
+  right: -20%;
+  text-align: right;
+}
+
+.open ~ .text {
+  left: 20%;
+}
+.open ~ .text2 {
+  right: 20%;
+}
+
+.no ~ .text, .no ~ .text2 {
+  transition: 0.5s;
+}
+
 
 /*sidebar ends*/
