@@ -159,6 +159,170 @@ div.panel
 #panel_2 {background:yellow;}
 
 
+/*end sidebar*/
 
-   /* Expand retract sidebar*/
+
+/*start buttons*/
   
+  @import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://fonts.googleapis.com/css?family=Abel);
+
+body{
+  background:#52292A;
+  
+}
+.icon{
+  height:1000px;
+  width:100%;
+  text-align:center;
+  padding-top:50px;
+}
+
+.button{
+  display:inline-block;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right:20px;
+  margin-bottom:20px;
+  text-align:center;
+  cursor:pointer;
+}
+.button:after{
+  display:inline-block;
+  position:relative;
+  border-radius: 50%; 
+  content:'';
+  box-sizing:content-box;
+  backface-visibility: hidden;
+}
+.button:before{
+  position:relative;
+  display:block;
+  font-family: 'FontAwesome', sans-serif;
+  font-size:2.5rem;
+  z-index :1;
+  line-height:90px;
+}
+
+
+
+.fontawesome-user{
+  box-shadow:0 0 0 3px white;
+}
+.fontawesome-film{
+  box-shadow:0 0 0 3px white;
+}
+.fontawesome-trash{
+  box-shadow:0 0 0 3px white;
+}
+.fontawesome-home{
+box-shadow:0 0 0 3px white;
+}
+.fontawesome-lock{
+box-shadow:0 0 0 3px white;
+}
+
+
+
+.fontawesome-user:after{
+  width: 90px;
+  height: 90px;
+  top:-90px;
+  background:white;
+  transition:transform .2s, opacity .2s;
+}
+.fontawesome-film:after{
+  width: 90px;
+  height: 90px;
+  top:-90px;
+  background:white;
+  transition:transform .2s, opacity .2s;
+}
+.fontawesome-trash:after{
+  width: 90px;
+  height: 90px;
+  top:-90px;
+  background:white;
+  transition:transform .2s, opacity .2s;
+}
+.fontawesome-home:after{
+  width: 90px;
+  height: 90px;
+  top:-90px;
+  background:white;
+  transition:transform .2s, opacity .2s;
+}
+
+.fontawesome-lock:after{
+  width: 90px;
+  height: 90px;
+  top:-90px;
+  background:white;
+  transition:transform .2s, opacity .2s;
+}
+
+
+
+
+
+.fontawesome-user:before{
+  color:black;
+  transition:color .2s;
+}
+.fontawesome-film:before{
+  color:black;
+  transition:color .2s;
+}
+.fontawesome-trash:before{
+  color:black;
+  transition:color .2s;
+}
+.fontawesome-home:before{
+  color:black;
+  transition:color .2s;
+}
+.fontawesome-lock:before{
+  color:black;
+  transition:color .2s;
+}
+
+
+
+.fontawesome-user:hover:after{
+    transform:scale(1.5);
+    opacity:0;
+}
+.fontawesome-film:hover:after{
+    transform:scale(1.5);
+    opacity:0;
+}
+.fontawesome-trash:hover:after{
+    transform:scale(1.5);
+    opacity:0;
+}
+.fontawesome-home:hover:after{
+    transform:scale(1.5);
+    opacity:0;
+}
+.fontawesome-lock:hover:after{
+    transform:scale(1.5);
+    opacity:0;
+}
+
+
+.fontawesome-user:hover:before{
+  color:white;
+} 
+.fontawesome-film:hover:before{
+  color:white;
+} 
+.fontawesome-trash:hover:before{
+  color:white;
+}
+.fontawesome-lock:hover:before{
+  color:white;
+} 
+.fontawesome-home:hover:before{
+  color:white;
+} 
