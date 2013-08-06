@@ -2,7 +2,6 @@
     width: 8%;
     min-height:960px;
     float: right;
-    background-image: url('whitetexture.png');
 }
 
 /* Reset
@@ -167,10 +166,7 @@ div.panel
   @import url(http://weloveiconfonts.com/api/?family=fontawesome);
 @import url(http://fonts.googleapis.com/css?family=Abel);
 
-body{
-  background:#52292A;
-  
-}
+
 .icon{
   height:1000px;
   width:100%;
@@ -208,19 +204,19 @@ body{
 
 
 .fontawesome-user{
-  box-shadow:0 0 0 3px white;
+  box-shadow:0 0 0 3px black;
 }
 .fontawesome-film{
-  box-shadow:0 0 0 3px white;
+  box-shadow:0 0 0 3px black;
 }
 .fontawesome-trash{
-  box-shadow:0 0 0 3px white;
+  box-shadow:0 0 0 3px black;
 }
 .fontawesome-home{
-box-shadow:0 0 0 3px white;
+box-shadow:0 0 0 3px black;
 }
 .fontawesome-lock{
-box-shadow:0 0 0 3px white;
+box-shadow:0 0 0 3px black;
 }
 
 
@@ -229,28 +225,28 @@ box-shadow:0 0 0 3px white;
   width: 90px;
   height: 90px;
   top:-90px;
-  background:white;
+  background-image: url('whitetexture.png');
   transition:transform .2s, opacity .2s;
 }
 .fontawesome-film:after{
   width: 90px;
   height: 90px;
   top:-90px;
-  background:white;
+  background-image: url('whitetexture.png');
   transition:transform .2s, opacity .2s;
 }
 .fontawesome-trash:after{
   width: 90px;
   height: 90px;
   top:-90px;
-  background:white;
+  background-image: url('whitetexture.png');
   transition:transform .2s, opacity .2s;
 }
 .fontawesome-home:after{
   width: 90px;
   height: 90px;
   top:-90px;
-  background:white;
+  background-image: url('whitetexture.png');
   transition:transform .2s, opacity .2s;
 }
 
@@ -258,7 +254,7 @@ box-shadow:0 0 0 3px white;
   width: 90px;
   height: 90px;
   top:-90px;
-  background:white;
+  background-image: url('whitetexture.png');
   transition:transform .2s, opacity .2s;
 }
 
@@ -312,17 +308,17 @@ box-shadow:0 0 0 3px white;
 
 
 .fontawesome-user:hover:before{
-  color:white;
+  color:black;
 } 
 .fontawesome-film:hover:before{
-  color:white;
+  color:black;
 } 
 .fontawesome-trash:hover:before{
-  color:white;
+  color:black;
 }
 .fontawesome-lock:hover:before{
-  color:white;
+  color:black;
 } 
 .fontawesome-home:hover:before{
-  color:white;
+  color:black;
 } 
