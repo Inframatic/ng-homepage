@@ -3,7 +3,8 @@ $(document).ready(function(){
      $(this).siblings(".panel").slideToggle("fast");
    });
 
-  $('#toggleaside').click(function(){
+  $('#friendlycircle').click(function(){
     $('aside').toggle("slide");
+    $('#friendlycircle').rotate(180);
   });
 });
