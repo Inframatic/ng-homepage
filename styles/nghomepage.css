@@ -1,0 +1,126 @@
+
+
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body { background:#ffffff; font-size: 13px; color: #666666; font-family: Arial, helvetica, sans-serif;}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 0;}
+h1 { margin-bottom: 10px; color: #111111;}  
+a, img { outline: none; border:none; color: #000; font-weight: bold; text-transform: uppercase;}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.2em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+  }
+
+/* Structure */
+#wrapper {
+  width: 99%; 
+  max-width: 1220px;
+  margin: auto;
+  padding: 2%;
+  } 
+  #main {
+    width: 60%;
+    margin-right: 5%;
+    float: left;
+    }   
+
+
+
+/* Logo H1 */
+header h1 {
+  height: 70px;
+  width: 160px;
+  float: left;
+  display: block;
+  color:black;
+  /*background: url(../images/demo.gif) 0 0 no-repeat;*/
+  /*text-indent: -9999px;*/
+  }
+
+/* Nav */
+header nav {
+  float: right;
+  margin-top: 40px; 
+  }
+
+  header nav li {
+    display: inline;
+    margin-left: 15px;
+    }
+
+#skipTo {
+  display: none;
+  }
+  #skipTo li {
+    background: #b1fffc;
+    }
+
+/* Banner */      
+#banner {
+  float: left;
+  margin-bottom: 15px;
+  width: 100%;
+  }
+
+  #banner img {
+    width: 100%;
+    }
+
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+  #skipTo {
+    display: block;
+    }
+
+  header nav, #main, aside {
+    float: left;
+    clear: left;
+    margin: 0 0 10px; 
+    width: 100%;
+    } 
+    header nav li {
+      margin: 0;
+      background: #efefef;
+      display: block;
+      margin-bottom: 3px;
+      }
+      header nav a {
+        display: block;
+        padding: 10px;
+        text-align: center;
+        }     
+}
+
+/*Slidersidebar*/
+
+  aside {
+    width: 40%;
+    min-height:960px;
+    float: left;
+    background-color:gray;
+    }
+
+ div.panel, div.slider_head
+{
+   margin:0px;
+   text-align:center;
+   background:#e5eecc;
+   border:solid 1px #c3c3c3;
+}
+div.panel
+{
+   height:auto;
+   display:none;
+}
+#panel_1 {background:pink;}
+#panel_2 {background:yellow;}
+
+/*sidebar ends*/
